@@ -2,13 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Country } from '../interface/country';
 import { CountryService } from '../service/country.service';
 import { CommonModule } from '@angular/common';
-import { Router, RouterLink } from '@angular/router';
-import { LanguageContainerComponent } from '../language-container/language-container.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-countries-container',
   standalone: true,
-  imports: [CommonModule, LanguageContainerComponent, RouterLink],
+  imports: [CommonModule, RouterLink],
   templateUrl: './countries-container.component.html',
   styleUrl: './countries-container.component.css'
 })
