@@ -1,18 +1,74 @@
-<table>
-    <tr>
-      <th>Country Name</th>
-      <th>Country Area</th>
-      <th>Country Code3</th>
-      <th>Year </th>
-      <th>Population</th>
-      <th>Gdp</th>
-    </tr>
-    <tr *ngFor = "let country of countries">
-      <td>{{country.name}}</td>
-      <td>{{country.area}}</td>
-      <td>{{country.countryCode3}}</td>
-      <td>{{country.countryStats.year}}</td>
-      <td>{{country.countryStats.population}}</td>
-      <td>{{country.countryStats.gdp}}</td>
-    </tr>
-  </table>
+
+<div class="container-fluid">
+  <br/>
+    <div class="row">
+      <div class="col">
+          <div class="p-5 bg-dark text-light">
+              Name
+          </div>
+      </div>
+      <div class="col">
+          <div class="p-5 bg-dark text-light">
+              Area
+          </div>
+      </div>
+      <div class="col">
+          <div class="p-5 bg-dark text-light">
+              Code3
+          </div>
+      </div>
+
+      <div class="col">
+        <div class="p-5 bg-dark text-light">
+            Year
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-5 bg-dark text-light">
+            Population
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-5 bg-dark text-light">
+            Gdp
+        </div>
+    </div>
+
+
+
+   </div>
+   <div class="row" *ngFor="let country of countries">
+      <div class="col">
+          <div class="p-5 text-dark">
+              {{country.name}}
+          </div>
+      </div>
+      <div class="col">
+          <div class="p-5 text-dark">
+              {{country.area}}
+          </div>
+      </div>
+      <div class="col">
+          <div class="p-5 text-dark">
+              {{country.countryCode3}}
+          </div>
+      </div>
+      
+      <div class="col">
+        <div class="p-5 text-dark">
+            {{country.countryStats.year}}
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-5 text-dark">
+            {{country.countryStats.population}}
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-5 text-dark">
+            {{country.countryStats.gdp}}
+        </div>
+      </div>
+  
+   </div>
+  </div>

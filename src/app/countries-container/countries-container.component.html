@@ -1,14 +1,41 @@
 
-<table>
-    <tr>
-      <th>Country Name</th>
-      <th>Country Area</th>
-      <th>Country Code3</th>
-    </tr>
-    <tr routerLink="/language" *ngFor = "let country of countries">
-      <td>{{country.name}}</td>
-      <td>{{country.area}}</td>
-      <td>{{country.countryCode3}}</td>
-    </tr>
-  </table>
 
+
+<div class="container-fluid">
+  <br/>
+    <div class="row">
+      <div class="col">
+          <div class="p-5 bg-dark text-light">
+              Name
+          </div>
+      </div>
+      <div class="col">
+          <div class="p-5 bg-dark text-light">
+              Area
+          </div>
+      </div>
+      <div class="col">
+          <div class="p-5 bg-dark text-light">
+              Code2
+          </div>
+      </div>
+   </div>
+   <div class="row" *ngFor="let country of countries">
+      <div class="col">
+          <div class="p-5 text-dark">
+              {{country.name}}
+          </div>
+      </div>
+      <div class="col">
+          <div class="p-5 text-dark">
+              {{country.area}}
+          </div>
+      </div>
+      <div class="col">
+          <div class="p-5 text-dark">
+              {{country.countryCode2}}
+          </div>
+      </div>
+  
+   </div>
+  </div>

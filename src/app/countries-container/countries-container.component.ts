@@ -15,7 +15,7 @@ import { LanguageContainerComponent } from '../language-container/language-conta
 export class CountriesContainerComponent implements OnInit {
   countries: Country[];
 
-  constructor(private countryService:CountryService, private router: Router){
+  constructor(private countryService:CountryService){
     this.countries = [];
   }
 
@@ -24,10 +24,6 @@ export class CountriesContainerComponent implements OnInit {
 			console.log(data);  
 			this.countries = data;
     })
-  }
-
-  goToPage(pageName: string):void {
-    this.router.navigate(['${pageName}'])
   }
 
 }
