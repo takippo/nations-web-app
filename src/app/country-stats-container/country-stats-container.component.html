@@ -1,0 +1,18 @@
+<table>
+    <tr>
+      <th>Country Name</th>
+      <th>Country Area</th>
+      <th>Country Code3</th>
+      <th>Year </th>
+      <th>Population</th>
+      <th>Gdp</th>
+    </tr>
+    <tr *ngFor = "let country of countries">
+      <td>{{country.name}}</td>
+      <td>{{country.area}}</td>
+      <td>{{country.countryCode3}}</td>
+      <td>{{country.countryStats.year}}</td>
+      <td>{{country.countryStats.population}}</td>
+      <td>{{country.countryStats.gdp}}</td>
+    </tr>
+  </table>
